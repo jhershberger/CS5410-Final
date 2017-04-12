@@ -1,0 +1,60 @@
+<!--
+@Author: Justin Hershberger
+@Date:   24-03-2017
+@Filename: index.html
+@Last modified by:   Justin Hershberger
+@Last modified time: 11-04-2017
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<title> Final </title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Styles\main.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body onload="Game.initialize(); Menu.drawMenu(); Map.intialize();">
+    <div class="panel">
+      <div class="panel-body gameContent">
+        <div class="row">
+          <div class="viewport col-md-6 pull-left cnvCont">
+            <canvas id="menuCanvas" width=1280 height=576 style="border:1px solid #000000;"></canvas>
+            <canvas id="menuSprite" class="hidden" width=1280 height=576 style="border:1px solid #000000;"></canvas>
+            <canvas id="controlsSprite" class="hidden" width=1280 height=576 style="border:1px solid #000000;"></canvas>
+            <canvas id="mapCanvas" width=1280 height=576 style="border:1px solid #000000;"></canvas>
+            <!-- <canvas id="totalMapCanvas"></canvas> -->
+            <canvas id="gameCanvas" width=1280 height=576 style="border:1px solid #000000;"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javaScript" src="Scripts\images.js"></script>
+    <script type="text/javaScript" src="Scripts\map.js"></script>
+    <script type="text/javaScript" src="Scripts\high_scores.js"></script>
+    <script type="text/javaScript" src="Scripts\controls.js"></script>
+    <script type="text/javaScript" src="Scripts\menu.js"></script>
+    <script type="text/javaScript" src="Scripts\render.js"></script>
+    <script type="text/javaScript" src="Scripts\game.js"></script>
+  </body>
+</html>
