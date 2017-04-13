@@ -3,7 +3,7 @@
 * @Date:   24-03-2017
 * @Filename: render.js
 * @Last modified by:   Justin Hershberger
-* @Last modified time: 11-04-2017
+* @Last modified time: 12-04-2017
 */
 
 
@@ -307,6 +307,7 @@ let Graphics = (function(){
 
 		// store the map as an image
 		that.map_view = new Image();
+    that.map_view.setAttribute('crossOrigin', 'anonymous');
 		that.map_view.src = temp_context.canvas.toDataURL("image/png");
 
 		// clear context
